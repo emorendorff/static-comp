@@ -7,27 +7,48 @@
     font-family: "Roboto", sans-serif;
   }
 
+.home-page {
+    background-color: #D3A588;
+     
+}
+
 .header {
-    background-color: gray;
+    background-color:#7A6563;
     display: flex;
     flex-direction: column;
+    height: 6em;
+    color: white;
 
 }
 
 .head-login {
     display: flex;
     justify-content: flex-end;
+    margin-right: .5em;
+}
+
+.login-dropdown {
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+    height: 90%;
+}
+
+.title-logo {
+    padding: .25em;
+    font-size: 35;
 }
 
 ul {
     list-style: none;
 }
 
+.nav-icons {
+    padding: 1em;
+}
 .nav-links {
     display: flex;
     align-items: flex-end;
@@ -47,8 +68,8 @@ ul {
   }
 
   .actual-card {
-      background-color: blanchedalmond;
-      border-radius: .75em;
+      background-color: #ECE2D0;;
+      border-radius: .5em;
       box-shadow: .2em .2em .2em;
   }
       
@@ -63,30 +84,40 @@ ul {
       position: relative;
   }
 
+  .text-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+  }
+
   /* .fa-reply {
       height: 50px;
       color: blue;
   } */
 
-  .date-area {
+  .ranking-area {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    left: 250px;
-    top: 150px;
-    z-index: 1;
-    background-color: white;
-    padding: 1em;
+    left: 18em;
+    top: 7em;
+    /* z-index: 1; */
+    background-color: #E56399;
+    padding: 2em;
     border-radius: 100em;
-    border: 1px solid #d3d3d3;
+  }
+
+  .rank {
+
   }
 
   .tasting-notes {
-      background-color: cornflowerblue;
-      margin: .75em;
-      padding: .75em;
-      font-weight: 200;
+    background-color: #7FD1B9;
+    margin: .75em;
+    padding: .75em;
+    font-weight: 200;
   }
 
 
