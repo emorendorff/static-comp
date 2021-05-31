@@ -84,11 +84,25 @@ ul {
       position: relative;
   }
 
+  .fa-reply {
+      position: absolute;
+      color: #fff;
+      margin: .75em;
+      padding: .75em;
+      border-radius: 100em;
+      background-color: #E56399;
+    
+  }
+
   .text-section {
       display: flex;
       flex-direction: column;
       align-items: center;
 
+  }
+
+  .bubness {
+      font-size: 25;
   }
 
   /* .fa-reply {
@@ -101,9 +115,8 @@ ul {
     flex-direction: column;
     align-items: center;
     position: absolute;
-    left: 18em;
+    left: 35em;
     top: 7em;
-    /* z-index: 1; */
     background-color: #E56399;
     padding: 2em;
     border-radius: 100em;
