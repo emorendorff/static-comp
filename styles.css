@@ -1,0 +1,49 @@
+* {
+    border: 1px solid red;
+    font-family: "Roboto", sans-serif;
+  }
+
+.header {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.head-login {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: flex-end;
+}
+
+.grid-container {
+   
+    display: grid;
+    -ms-grid-columns: minmax(200px, 1fr) 1rem minmax(200px, 1fr) 1rem
+      minmax(200px, 1fr) 1rem minmax(200px, 1fr);
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .card {
+      box-shadow: 1px 1px 3px 3px;
+  }
+
+  .card-photo-area {
+      max-height: 200px;
+      position: relative;
+  }
+
