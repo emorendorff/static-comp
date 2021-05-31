@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     border: 0;
-    border: 1px solid red;
+    vertical-align: baseline;
+    /* border: 1px solid blue; */
     font-family: "Roboto", sans-serif;
   }
 
@@ -42,83 +43,66 @@ ul {
     padding: 1.3em;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 1.5fr);
-    gap: 2em;
+    gap: 1.5em;
   }
 
-  .card {
-      box-shadow: 1px 1px 3px 3px;
+  .actual-card {
+      background-color: blanchedalmond;
+      border-radius: .75em;
+      box-shadow: .2em .2em .2em;
   }
-
-  .card-image {
-      object-fit: cover;
+      
+  .bubble-image {
       width: 100%;
-      height: 200px;
-      max-width: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      height: 10em;
   }
 
-  .card-photo-area {
-      max-height: 200px;
+  .image-overlays {
       position: relative;
   }
 
-  .card-photo-overlay-area {
-      position: absolute;
-        bottom: 0;
-        left: 1vw;
-        width: 100%;
-        opacity: 80%;
-        height: 30px;
-        width: 30px;
-  }
+  /* .fa-reply {
+      height: 50px;
+      color: blue;
+  } */
 
-  .reply-button {
-    display: block;
-    border-radius: 50%;
-    transform: scaleX(-1);
-    height: 4rem;
-    width: 4rem;
-    border: none;
-  }
-
-  .card-views-section {
-    color: black;
+  .date-area {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 250px;
+    top: 150px;
+    z-index: 1;
+    background-color: white;
+    padding: 1em;
+    border-radius: 100em;
+    border: 1px solid #d3d3d3;
+  }
+
+  .tasting-notes {
+      background-color: cornflowerblue;
+      margin: .75em;
+      padding: .75em;
+      font-weight: 200;
   }
 
 
-
-/* utility classes */
 .uppercase {
     text-transform: uppercase;
   }
   
-  /* Media-queries */
-  @media screen and (max-width: 960px) {
-    .grid {
-      grid-template-columns: repeat(3, minmax(200px, 1fr));
-    }
-  }
+  /*desktop breakpoints */
+@media screen and (min-width: 1200px) {
   
-  @media screen and (max-width: 790px) {
-    .grid {
-      grid-template-columns: repeat(2, minmax(200px, 1fr));
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr 1fr;
+      gap: 1em;
     }
-  
-    .header-navigation {
-      flex-direction: column-reverse;
-    }
-  }
-  
-  @media screen and (max-width: 525px) {
-    .grid {
-      grid-template-columns: repeat(1, minmax(200px, 1fr));
-    }
-  
-    .header-links {
-      flex-direction: column;
-    }
-  }
 
 
 
