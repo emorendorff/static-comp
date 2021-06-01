@@ -40,7 +40,7 @@ select {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    height: 90%;
+    height: 95%;
 }
 
 .title-logo {
@@ -61,11 +61,6 @@ ul {
 }
 
 .grid-container {
-    /* display: grid;
-    padding: .5em;
-    align-items: center;
-    grid-template-columns: repeat(4, minmax(200px, 1fr));
-    gap: 1rem;     */
     display: grid;
     padding: 1.3em;
     grid-template-columns: 1fr;
@@ -121,7 +116,7 @@ ul {
     flex-direction: column;
     align-items: center;
     position: absolute;
-    left: 12.5em;
+    left: 14em;
     top: 6em;
     background-color: #E56399;
     padding: 1.5em;
@@ -153,4 +148,3 @@ ul {
       grid-template-rows: 1fr 1fr;
       gap: 1em;
     }
-
