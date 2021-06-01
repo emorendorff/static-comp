@@ -1,9 +1,9 @@
+/* reset */
 * {
     margin: 0;
     padding: 0;
     border: 0;
     vertical-align: baseline;
-    /* border: 1px solid blue; */
   }
 
 .home-page {
@@ -35,11 +35,6 @@ select {
     color: #fff;
 }
 
-/* .login {
-    font-family: "Roboto", sans-serif;
-    border: 0px;
-    outline: 0px;
-} */
 
 .nav-container {
     display: flex;
@@ -87,7 +82,7 @@ ul {
   .bubble-image {
       width: 100%;
       object-fit: cover;
-      overflow: hidden;
+      overflow: clip;
       height: 10em;
   }
 
@@ -112,14 +107,14 @@ ul {
 
   }
 
+  h2 {
+      color: #fff;
+      padding-left: .9em;
+  }
+
   .bubness {
       font-size: 25;
   }
-
-  /* .fa-reply {
-      height: 50px;
-      color: blue;
-  } */
 
   .ranking-area {
     display: flex;
@@ -129,12 +124,12 @@ ul {
     left: 12.5em;
     top: 6em;
     background-color: #E56399;
-    padding: 2em;
+    padding: 1.5em;
     border-radius: 100em;
   }
 
   .rank {
-
+   font-size: 25;
   }
 
   .tasting-notes {
